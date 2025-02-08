@@ -2,18 +2,11 @@
   "canisters": {
     "icp_wallet_backend": {
       "candid": "src/icp_wallet_backend/icp_wallet_backend.did",
-      "package": "icp_wallet_backend",
+      "wasm": "target/wasm32-unknown-unknown/release/icp_wallet_backend.wasm.gz",
+            "package": "icp_wallet_backend",
       "type": "rust"
-    },
-    "icp_wallet_frontend": {
-      "dependencies": [
-        "icp_wallet_backend"
-      ],
-      "source": [
-        "src/icp_wallet_frontend/assets"
-      ],
-      "type": "assets"
     }
+   
   },
   "defaults": {
     "build": {
